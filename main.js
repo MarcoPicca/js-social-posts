@@ -63,21 +63,21 @@ const posts = [
 
 const postsList = document.getElementById('container');
 
-const buttonLike = document.getElementsByClassName('js-like-button');
+// const buttonLike = document.getElementsByClassName('js-like-button');
 
 
-function likeButton () {buttonLike.addEventListener('click', function(){
+// function likeButton (posts) {buttonLike.addEventListener('click', function(){
 
-    let clicked = false;
+//     let clicked = false;
 
-    if (clicked){
-        moreLike = `${posts.likes}` + 1;
-    } 
+//     if (clicked){
+//         moreLike = `${posts.likes}` + 1;
+//     } 
 
-});
+// });
 
-return moreLike
-}
+// return moreLike;
+// }
 
 
 
@@ -105,9 +105,9 @@ for (let i = 0; i <= posts.length; i++ ){
                 <img src="${post.media}" alt="">
             </div>
             <div class="post__footer">
-                <div class="likes js-likes">
+                <div class="likes ${likeButton} js-likes">
                     <div class="likes__cta">
-                        <a class="like-button ${likeButton} js-like-button" href="#" data-postid="1">
+                        <a class="like-button  js-like-button" href="#" data-postid="1">
                             <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
                             <span  class="like-button__label">Mi Piace</span>
                         </a>
