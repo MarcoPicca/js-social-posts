@@ -105,7 +105,7 @@ for (let i = 0; i <= posts.length; i++ ){
                 <img src="${post.media}" alt="">
             </div>
             <div class="post__footer">
-                <div class="likes ${likeButton} js-likes">
+                <div class="likes js-likes">
                     <div class="likes__cta">
                         <a class="like-button  js-like-button" href="#" data-postid="1">
                             <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
